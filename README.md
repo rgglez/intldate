@@ -1,11 +1,12 @@
 # Intl. Date
 
-[![StyleCI](https://styleci.io/repos/67480531/shield?branch=master)](https://styleci.io/repos/67480531) [![Build Status](https://travis-ci.org/meysampg/intldate.svg?branch=master)](https://travis-ci.org/meysampg/intldate) [![Total Downloads](https://poser.pugx.org/meysampg/intldate/downloads)](https://packagist.org/packages/meysampg/intldate) [![Latest Stable Version](https://poser.pugx.org/meysampg/intldate/v/stable)](https://packagist.org/packages/meysampg/intldate) [![Maintainability](https://api.codeclimate.com/v1/badges/a8958ec9f4ffc059b6fb/maintainability)](https://codeclimate.com/github/meysampg/intldate/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/a8958ec9f4ffc059b6fb/test_coverage)](https://codeclimate.com/github/meysampg/intldate/test_coverage)
+[![StyleCI](https://styleci.io/repos/67480531/shield?branch=master)](https://styleci.io/repos/67480531) [![Build Status](https://travis-ci.org/rgglez/intldate.svg?branch=master)](https://travis-ci.org/meysampg/intldate) [![Total Downloads](https://poser.pugx.org/rgglez/intldate/downloads)](https://packagist.org/packages/meysampg/intldate) [![Latest Stable Version](https://poser.pugx.org/rgglez/intldate/v/stable)](https://packagist.org/packages/rgglez/intldate) [![Maintainability](https://api.codeclimate.com/v1/badges/a8958ec9f4ffc059b6fb/maintainability)](https://codeclimate.com/github/meysampg/intldate/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/a8958ec9f4ffc059b6fb/test_coverage)](https://codeclimate.com/github/meysampg/intldate/test_coverage)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmeysampg%2Fintldate.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmeysampg%2Fintldate?ref=badge_shield)
 
 # TODO
 
-Make this work in PHP 8.x
+* Make this thing work in PHP 8.x =) (it already works in PHP 7.4 under Ubuntu 22.04).
+* Adjust this README.
 =========================
 
 PHP Library for Converting Date to Multiple Calendars
