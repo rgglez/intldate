@@ -111,7 +111,7 @@ trait IntlDateTrait
     public function from(
         $datetime = [],
         $locale = 'en_US',
-        $calendar = null,
+        $calendar = '',
         $timezone = 'UTC'
     ) {
         $datetime = $this->parseDateTime($datetime);
@@ -640,11 +640,19 @@ trait IntlDateTrait
         $calendar = IntlDateFormatter::GREGORIAN,
         $pattern = 'yyyy/MM/dd HH:mm:ss'
     ) {
+
+        // DIRTY HACK. TODO: Adjust the parameters to make them compatible,
+        // or see why the are wrong in the first place.
+        $locale = substr($locale, 0, 5);
+        $datetype = ($datetype === null) ? IntlDateFormatter::FULL : $datetype;
+        $timetype = ($timetype === null) ? IntlDateFormatter::FULL : $timetype;
+        $tz = is_object($timezone) ? $timezone->getID() : $timezone;
+
         $this->_intlDateFormatter = new IntlDateFormatter(
             $locale, // string $locale
             $datetype, // int $datetype
             $timetype, // int $timetype
-            $timezone, // mixed $timezone
+            $tz, // mixed $timezone
             $calendar, // mixed $calendar
             $pattern // string $pattern
         );
